@@ -1,6 +1,7 @@
 body {
     background: black;
     text-align: center;
+    font-family: 'Common Pixel';
 }
 
 #challenge1, #challenge2, #challenge3 {
@@ -12,6 +13,7 @@ body {
     color: rgb(2, 89, 2);
     padding: 60px;
     background: black;
+    font-family: 'Common Pixel';
 }
 
 #nav-buttons, .challenge-header {

@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Common Pixel';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Common Pixel'), url('./COMMP___.woff') format('woff');
+}
