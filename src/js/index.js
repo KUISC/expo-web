@@ -1,18 +1,16 @@
 let challenges = ["c1", "c2", "c3"];
 
 function submitChallenge(chalNum) {
-    switch(chalNum) {
-        case "c1":
-            checkChal1();
-            break;
-        case "c2":
-            checkChal2();
-            break;
-        case "c3":
-            checkChal3();
-            break;
-        default:
-    }
+    const result = ({
+        "c1":
+            checkChal1(),
+        "c2":
+            checkChal2(),
+        "c3":
+            checkChal3()
+    })[chalNum]
+
+    alert(result);
     
 
 }
