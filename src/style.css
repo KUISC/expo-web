@@ -1,0 +1,36 @@
+body {
+    background: black;
+    text-align: center;
+}
+
+#challenge1, #challenge2, #challenge3 {
+    height: 600px;
+}
+
+#page-header {
+    text-align: center;
+    color: rgb(2, 89, 2);
+    padding: 60px;
+    background: black;
+}
+
+#nav-buttons, .challenge-header {
+    text-align: center;
+    color:rgb(2, 89, 2);
+}
+
+.challenge-text {
+    color: white;
+}
+
+#nav-buttons a {
+    outline: none;
+}
+
+#page-header h1 {
+    display: inline-block;
+}
+
+#image-surround {
+    display: inline-block;
+}
