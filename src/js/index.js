@@ -1,18 +1,21 @@
-let challenges = ["c1", "c2", "c3"];
+const challenges = ["challenge1", "challenge2", "challenge3"];
 
 function submitChallenge(chalNum) {
     const result = ({
-        "c1":
+        "challenge1":
             checkChal1(),
-        "c2":
+        "challenge2":
             checkChal2(),
-        "c3":
+        "challenge3":
             checkChal3()
     })[chalNum]
 
-    alert(result);
-    
-
+    if(result) {
+        updatePage(chalNum);
+    }
+    else{
+        tryAgain();
+    }
 }
 
 function checkChal1() {
@@ -43,4 +46,27 @@ function checkChal3() {
     else { 
         return(false); 
     }
+}
+
+function updatePage(currentChal) {
+    challenges.forEach(function (challenge, index) {
+        if(challenge == currentChal) {
+            if(index == 2) {
+                youWon();
+            }
+            else{
+                console.log(challenges[index+1])
+                document.getElementById(challenge).style.display = "none";
+                document.getElementById(challenges[index+1]).style.display = "";
+            }
+        }
+    })
+}
+
+function tryAgain() {
+    alert("wrong");
+}
+
+function youWon() {
+    alert("winner");
 }

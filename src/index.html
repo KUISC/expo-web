@@ -15,9 +15,9 @@
         <h2 class="challenge-header">Challenge 1 - Morse Code</h1>
         <h4 class="challenge-text">.-.  ---     -.-.    -.-</h4>
         <div class="submit-challenge">
-            <form id="challenge1-form">
+            <form id="challenge1-form" action="#">
                 <label for="challenge1-text" class="challenge-text"><b>Answer: </b></label>
-                <input type="text" id="challenge1-text"><br><br>
+                <input type="text" id="challenge1-text" onfocus="this.value=''"><br><br>
                 <input type="submit" value="Submit" onclick="submitChallenge(challenges[0])">
             </form>
         </div>
@@ -26,9 +26,9 @@
         <h2 class="challenge-header">Challenge 2 - ASCII Code</h1>
         <h4 class="challenge-text">67 72 65 76 75</h4>
         <div class="submit-challenge">
-            <form id="challenge2-form">
+            <form id="challenge2-form" action="#">
                 <label for="challenge2-text" class="challenge-text"><b>Answer: </b></label>
-                <input type="text" id="challenge2-text"><br><br>
+                <input type="text" id="challenge2-text" onfocus="this.value=''"><br><br>
                 <input type="submit" value="Submit" onclick="submitChallenge(challenges[1])">
             </form>
         </div>
@@ -37,9 +37,9 @@
         <h2 class="challenge-header">Challenge 3 - Caesar Cipher</h1>
         <h4 class="challenge-text">OFDMFBP</h4>
         <div class="submit-challenge">
-            <form id="challenge3-form">
+            <form id="challenge3-form" action="#">
                 <label for="challenge3-text" class="challenge-text"><b>Answer: </b></label>
-                <input type="text" id="challenge3-text"><br><br>
+                <input type="text" id="challenge3-text" onfocus="this.value=''"><br><br>
                 <input type="submit" value="Submit" onclick="submitChallenge(challenges[2])">
             </form>
         </div>
