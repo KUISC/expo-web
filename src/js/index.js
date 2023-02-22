@@ -71,7 +71,7 @@ function updatePage(currentChal) {
 }
 
 function tryAgain() {
-    alert("wrong");
+    alert("Try again!");
 }
 
 function youWon() {
