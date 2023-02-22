@@ -12,7 +12,6 @@ body {
     text-align: center;
     color: rgb(2, 89, 2);
     padding: 60px;
-    background: black;
     font-family: 'Common Pixel';
 }
 
@@ -31,7 +30,7 @@ body {
     font-size: 4em;
 }
 
-#nav-buttons, .challenge-header {
+#nav-buttons, .challenge-header, #winner {
     text-align: center;
     color:rgb(2, 89, 2);
 }
@@ -48,10 +47,10 @@ body {
     outline: none;
 }
 
-#page-header h1 {
+#page-header h1, #image-surround {
     display: inline-block;
 }
 
-#image-surround {
-    display: inline-block;
+p {
+    color:rgb(2, 89, 2);
 }

@@ -58,6 +58,7 @@ function updatePage(currentChal) {
     challenges.forEach(function (challenge, index) {
         if(challenge == currentChal) {
             if(index == 2) {
+                document.getElementById(challenge).style.display = "none";
                 youWon();
             }
             else{
@@ -74,5 +75,5 @@ function tryAgain() {
 }
 
 function youWon() {
-    alert("winner");
+    document.getElementById("winner").style.display = "";
 }
