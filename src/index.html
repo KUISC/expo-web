@@ -7,41 +7,44 @@
 <body>
     <nav>
         <header id="page-header">
-            <!--<img id="image-surround" src="imgs/jayhawk.png" alt=""/>-->
-            <h1>Jayhackers' Expo Challenge</h1>
-            <!--<img id="image-surround" src="imgs/jayhawk.png" alt=""/>-->
+            <h1 id="header-text">Jayhackers' Expo Challenge</h1>
         </header> 
     </nav>
-    <div id="challenge1"><a href="challenge1"></a>
+    <div id="start-div">
+        <form id="start-form" action="#">
+            <input id="start-button" type="submit" class="button" value="Start Challenge" onclick="startChallenge()">
+        </form>
+    </div>
+    <div id="challenge1" class="challenge-div" style="display: none"><a href="challenge1"></a>
         <h2 class="challenge-header">Challenge 1 - Morse Code</h1>
         <h4 class="challenge-text">.-.  ---     -.-.    -.-</h4>
         <div class="submit-challenge">
             <form id="challenge1-form" action="#">
                 <label for="challenge1-text" class="challenge-text"><b>Answer: </b></label>
                 <input type="text" id="challenge1-text" onfocus="this.value=''"><br><br>
-                <input type="submit" value="Submit" onclick="submitChallenge(challenges[0])">
+                <input type="submit" value="Submit" class="button" onclick="submitChallenge(challenges[0])">
             </form>
         </div>
     </div>
-    <div id="challenge2" style="display: none"><a href="challenge2"></a>
+    <div id="challenge2" class="challenge-div" style="display: none"><a href="challenge2"></a>
         <h2 class="challenge-header">Challenge 2 - ASCII Code</h1>
         <h4 class="challenge-text">67 72 65 76 75</h4>
         <div class="submit-challenge">
             <form id="challenge2-form" action="#">
                 <label for="challenge2-text" class="challenge-text"><b>Answer: </b></label>
                 <input type="text" id="challenge2-text" onfocus="this.value=''"><br><br>
-                <input type="submit" value="Submit" onclick="submitChallenge(challenges[1])">
+                <input type="submit" value="Submit" class="button" onclick="submitChallenge(challenges[1])">
             </form>
         </div>
     </div>
-    <div id="challenge3" style="display: none"><a href="challenge3"></a>
+    <div id="challenge3" class="challenge-div" style="display: none"><a href="challenge3"></a>
         <h2 class="challenge-header">Challenge 3 - Caesar Cipher</h1>
         <h4 class="challenge-text">OFDMFBP</h4>
         <div class="submit-challenge">
             <form id="challenge3-form" action="#">
                 <label for="challenge3-text" class="challenge-text"><b>Answer: </b></label>
                 <input type="text" id="challenge3-text" onfocus="this.value=''"><br><br>
-                <input type="submit" value="Submit" onclick="submitChallenge(challenges[2])">
+                <input type="submit" value="Submit" class="button" onclick="submitChallenge(challenges[2])">
             </form>
         </div>
     </div>
