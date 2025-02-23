@@ -1,0 +1,56 @@
+body {
+    background: black;
+    text-align: center;
+    font-family: 'Common Pixel';
+}
+
+#challenge1, #challenge2, #challenge3 {
+    height: 600px;
+}
+
+#page-header {
+    text-align: center;
+    color: rgb(2, 89, 2);
+    padding: 60px;
+    font-family: 'Common Pixel';
+}
+
+#page-header h1 {
+    font-size: 4em;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    font-family: 'Common Pixel';
+    border-radius: 8px;
+}
+
+#start-button {
+    font-size: 4em;
+}
+
+#nav-buttons, .challenge-header, #winner {
+    text-align: center;
+    color:rgb(2, 89, 2);
+}
+
+.challenge-div .button {
+    font-size: 1em;
+}
+
+.challenge-text {
+    color: white;
+}
+
+#nav-buttons a {
+    outline: none;
+}
+
+#page-header h1, #image-surround {
+    display: inline-block;
+}
+
+p {
+    color:rgb(2, 89, 2);
+}
