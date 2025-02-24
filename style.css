@@ -17,7 +17,9 @@ body {
     background-color: rgba(26, 15, 60, 0.7);
 }
 
-#challenge1, #challenge2, #challenge3 {
+#challenge1,
+#challenge2,
+#challenge3 {
     height: auto;
     min-height: 600px;
     margin: 20px auto;
@@ -143,6 +145,7 @@ body {
     from {
         box-shadow: 0 0 20px #ffd700;
     }
+
     to {
         box-shadow: 0 0 40px #ff69b4;
     }
