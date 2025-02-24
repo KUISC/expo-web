@@ -54,6 +54,29 @@ function checkChal3() {
     }
 }
 
+function youWon() {
+    document.getElementById("winner").style.display = "";
+    
+    // Set a countdown timer for 30 seconds
+    let countdownElement = document.createElement("p");
+    countdownElement.id = "countdown";
+    countdownElement.className = "scroll-text";
+    countdownElement.innerHTML = "Returning to the beginning in 30 seconds...";
+    document.getElementById("winner").appendChild(countdownElement);
+    
+    // Start the countdown and reset after 30 seconds
+    let timeLeft = 30;
+    let countdownTimer = setInterval(function() {
+        timeLeft--;
+        if (timeLeft > 0) {
+            countdownElement.innerHTML = `Returning to the beginning in ${timeLeft} seconds...`;
+        } else {
+            clearInterval(countdownTimer);
+            resetGame();
+        }
+    }, 1000);
+}
+
 function updatePage(currentChal) {
     challenges.forEach(function (challenge, index) {
         if (challenge == currentChal) {
@@ -70,10 +93,25 @@ function updatePage(currentChal) {
     })
 }
 
-function tryAgain() {
-    alert("Try again!");
+function resetGame() {
+    // Hide all challenge divs and the winner div
+    document.getElementById("winner").style.display = "none";
+    challenges.forEach(function(challenge) {
+        document.getElementById(challenge).style.display = "none";
+    });
+    
+    // Reset the header font size
+    document.getElementById("header-text").style.fontSize = "6em";
+    
+    // Show the start div
+    document.getElementById("start-div").style.display = "";
+    
+    // Clear all input fields
+    document.getElementById("challenge1-text").value = "";
+    document.getElementById("challenge2-text").value = "";
+    document.getElementById("challenge3-text").value = "";
 }
 
-function youWon() {
-    document.getElementById("winner").style.display = "";
+function tryAgain() {
+    alert("Try again!");
 }
