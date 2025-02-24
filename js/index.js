@@ -16,55 +16,55 @@ function submitChallenge(chalNum) {
             checkChal3()
     })[chalNum]
 
-    if(result) {
+    if (result) {
         updatePage(chalNum);
     }
-    else{
+    else {
         tryAgain();
     }
 }
 
 function checkChal1() {
-    let submittedVal = document.getElementById("challenge1-text").value; 
-    if(submittedVal.replace(/\s+/g, '').toLowerCase() == atob('cm9jaw==')) {
-        return(true);
+    let submittedVal = document.getElementById("challenge1-text").value;
+    if (submittedVal.replace(/\s+/g, '').toLowerCase() == atob('cm9jaw==')) {
+        return (true);
     }
-    else { 
-        return(false); 
+    else {
+        return (false);
     }
 }
 
 function checkChal2() {
-    let submittedVal = document.getElementById("challenge2-text").value; 
-    if(submittedVal.replace(/\s+/g, '').toLowerCase() == atob('Y2hhbGs=')) {
-        return(true);
+    let submittedVal = document.getElementById("challenge2-text").value;
+    if (submittedVal.replace(/\s+/g, '').toLowerCase() == atob('Y2hhbGs=')) {
+        return (true);
     }
-    else { 
-        return(false); 
+    else {
+        return (false);
     }
 }
 
 function checkChal3() {
-    let submittedVal = document.getElementById("challenge3-text").value; 
-    if(submittedVal.replace(/\s+/g, '').toLowerCase() == atob('amF5aGF3aw==')) {
-        return(true);
+    let submittedVal = document.getElementById("challenge3-text").value;
+    if (submittedVal.replace(/\s+/g, '').toLowerCase() == atob('amF5aGF3aw==')) {
+        return (true);
     }
-    else { 
-        return(false); 
+    else {
+        return (false);
     }
 }
 
 function updatePage(currentChal) {
     challenges.forEach(function (challenge, index) {
-        if(challenge == currentChal) {
-            if(index == 2) {
+        if (challenge == currentChal) {
+            if (index == 2) {
                 document.getElementById(challenge).style.display = "none";
                 youWon();
             }
-            else{
-                console.log(challenges[index+1])
+            else {
+                console.log(challenges[index + 1])
                 document.getElementById(challenge).style.display = "none";
-                document.getElementById(challenges[index+1]).style.display = "";
+                document.getElementById(challenges[index + 1]).style.display = "";
             }
         }
     })
